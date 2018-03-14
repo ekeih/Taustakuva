@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Taustakuva",
+  "description": "This extension displays a nice picture and the current time in every new tab.",
+  "version": "1.0",
+
+  "chrome_url_overrides" : {
+    "newtab": "taustakuva.html"
+  },
+
+  "permissions": [
+    "https://apod.nasa.gov/"
+  ]
+}

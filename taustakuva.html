@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>New Tab</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #outer {
+        display: table;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+
+      #center {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      #content {
+        width: 100%;
+        text-align: center;
+        background-color: #555555AA;
+        color: white;
+      }
+
+      #time {
+        font-size: 150px;
+      }
+
+      #date {
+        font-size: 40px;
+      }
+    </style>
+    <script src="taustakuva.js"></script>
+  </head>
+  <body id="main">
+    <div id="outer">
+      <div id="center">
+        <div id="content">
+          <div id="time">00:00</div>
+          <div id="date">01.01.1970</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
