@@ -7,3 +7,7 @@ displays a nice picture and the current time in every new tab.
 
 Currently it downloads the picture every time you open a new tab. As I said:
 This is just a proof of concept.
+
+## Taustakuva?!?
+
+"Taustakuva" is Finnish for "wallpaper".
