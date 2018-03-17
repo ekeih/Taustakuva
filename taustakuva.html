@@ -25,28 +25,44 @@
       #content {
         width: 100%;
         text-align: center;
-        background-color: #555555AA;
+        background-color: #55555533;
         color: white;
       }
 
       #time {
-        font-size: 150px;
+        font-size: 170px;
       }
 
       #date {
         font-size: 40px;
       }
+
+      #source {
+        color: white;
+        background-color: #55555533;
+        position: fixed;
+        bottom: 0;
+        padding: 10px;
+
+      }
+
+      a {
+        color: white;
+      }
     </style>
     <script src="taustakuva.js"></script>
   </head>
-  <body id="main">
+  <body>
     <div id="outer">
       <div id="center">
         <div id="content">
           <div id="time">00:00</div>
-          <div id="date">01.01.1970</div>
+          <!--<div id="date">01.01.1970</div>-->
         </div>
       </div>
+    </div>
+    <div id="source">
+      Source: <a href="https://pixabay.com/">pixabay.com</a>
     </div>
   </body>
 </html>

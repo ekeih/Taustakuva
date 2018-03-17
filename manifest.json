@@ -10,6 +10,6 @@
   },
 
   "permissions": [
-    "https://apod.nasa.gov/"
+    "storage"
   ]
 }
