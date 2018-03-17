@@ -6,8 +6,29 @@
       body {
         margin: 0;
         padding: 0;
-        background-color: black;
         font-family: Arial, Helvetica, sans-serif;
+        background-color: #333;
+        animation: fadein 2s;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
       }
 
       #outer {
@@ -33,23 +54,19 @@
         font-size: 170px;
       }
 
-      #date {
-        font-size: 40px;
-      }
-
       #source {
         color: white;
         background-color: #55555533;
         position: fixed;
         bottom: 0;
         padding: 10px;
-
       }
 
       a {
         color: white;
       }
     </style>
+    <script src="images.js"></script>
     <script src="taustakuva.js"></script>
   </head>
   <body>
@@ -57,7 +74,6 @@
       <div id="center">
         <div id="content">
           <div id="time">00:00</div>
-          <!--<div id="date">01.01.1970</div>-->
         </div>
       </div>
     </div>
