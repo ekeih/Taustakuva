@@ -15,7 +15,7 @@ function getStoragePath() {
          leadingZero(date.getDate())).toString();
 }
 
-function storeImage() {
+function getNewImage() {
   let url = images[Math.floor(Math.random()*images.length)];
   let xhr = new XMLHttpRequest();
   xhr.open("GET", url);
@@ -40,7 +40,7 @@ function loadImage() {
   let storageDate = getStoragePath();
   chrome.storage.local.get([storageDate], function(result) {
     if (Object.keys(result).length === 0 && result.constructor === Object) {
-      storeImage();
+      getNewImage();
     } else {
       document.styleSheets[0].insertRule(
         "body::before { background-image: url('" +
